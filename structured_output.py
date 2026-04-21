@@ -5,7 +5,7 @@ load_dotenv()
 
 def main():
     client = OpenAI()
-    prompt = [{"role": "system", "content": "Always respond in valid JSON only. No extra text."},
+    prompt = [{"role": "system", "content": "Always respond in valid JSON format only. No extra text."},
              {"role": "user", "content": """suggest one asian restaurant name and five dishes.
               Use this format:
              {
